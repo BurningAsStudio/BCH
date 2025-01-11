@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e42239e244278014991167d121fef193
+guid: 876954ed8726c3d4081dbd95d802b185
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -22,7 +22,7 @@ TextureImporter:
     normalMapFilter: 0
     flipGreenChannel: 0
   isReadable: 0
-  streamingMipmaps: 0
+  streamingMipmaps: 1
   streamingMipmapsPriority: 0
   vTOnly: 0
   ignoreMipmapLimit: 0
@@ -115,10 +115,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 192712
-  packageName: Atmospheric House (Modular)
-  packageVersion: 1.1.0
-  assetPath: Assets/AtmosphericHouse/Scenes/House_clean_day/Lightmap-6_comp_light.exr
-  uploadId: 688263

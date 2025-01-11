@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 37556607151935854}
   - component: {fileID: 8023502202678062769}
   - component: {fileID: 1708460753624939088}
+  - component: {fileID: 591316662744879787}
   m_Layer: 0
   m_Name: Area Light
   m_TagString: Untagged
@@ -175,7 +176,7 @@ Light:
   serializedVersion: 11
   m_Type: 3
   m_Color: {r: 0.8773585, g: 0.858218, b: 0.7242346, a: 1}
-  m_Intensity: 8
+  m_Intensity: 5
   m_Range: 8
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -219,7 +220,7 @@ Light:
   m_AreaSize: {x: 0.63, y: 0.04}
   m_BounceIntensity: 1
   m_ColorTemperature: 5000
-  m_UseColorTemperature: 1
+  m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 8}
   m_UseBoundingSphereOverride: 1
   m_UseViewFrustumForShadowCasterCull: 1
@@ -245,3 +246,26 @@ MonoBehaviour:
   VisibilityDistance: 15
   FloorHeight: 0
   UseFloorHeight: 0
+--- !u!114 &591316662744879787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3033241477075809488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0

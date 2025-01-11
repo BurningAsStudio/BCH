@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ef273d3a488c976429320ff3cebf0d87
+guid: 7379cd5313689214ab0e1caaa3e4d314
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -22,7 +22,7 @@ TextureImporter:
     normalMapFilter: 0
     flipGreenChannel: 0
   isReadable: 0
-  streamingMipmaps: 0
+  streamingMipmaps: 1
   streamingMipmapsPriority: 0
   vTOnly: 0
   ignoreMipmapLimit: 0
@@ -115,10 +115,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 192712
-  packageName: Atmospheric House (Modular)
-  packageVersion: 1.1.0
-  assetPath: Assets/AtmosphericHouse/Scenes/House_worn_night/Lightmap-2_comp_light.exr
-  uploadId: 688263

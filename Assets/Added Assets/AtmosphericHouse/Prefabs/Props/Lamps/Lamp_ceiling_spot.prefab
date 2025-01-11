@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 8261782340990056563}
   - component: {fileID: 6460577794184922217}
   - component: {fileID: 2334790707117377710}
+  - component: {fileID: 6749003666215147475}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -199,7 +200,7 @@ Light:
   m_AreaSize: {x: 0.4, y: 0.4}
   m_BounceIntensity: 1
   m_ColorTemperature: 5500
-  m_UseColorTemperature: 1
+  m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 13}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -225,6 +226,29 @@ MonoBehaviour:
   VisibilityDistance: 15
   FloorHeight: 0
   UseFloorHeight: 0
+--- !u!114 &6749003666215147475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3106236096233173544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &4283065348163408438
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,6 +260,7 @@ GameObject:
   - component: {fileID: 7106414796932597617}
   - component: {fileID: 214291046701462489}
   - component: {fileID: 6581340543068297837}
+  - component: {fileID: 4053542355741962675}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -313,7 +338,7 @@ Light:
   m_AreaSize: {x: 0.4, y: 0.4}
   m_BounceIntensity: 1
   m_ColorTemperature: 5500
-  m_UseColorTemperature: 1
+  m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 13}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -339,6 +364,29 @@ MonoBehaviour:
   VisibilityDistance: 15
   FloorHeight: 0
   UseFloorHeight: 0
+--- !u!114 &4053542355741962675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4283065348163408438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &4622991426407606482
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,6 +398,7 @@ GameObject:
   - component: {fileID: 6049766936219190485}
   - component: {fileID: 3911210822441218727}
   - component: {fileID: 3006287627766238986}
+  - component: {fileID: 6087079993911221459}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -427,7 +476,7 @@ Light:
   m_AreaSize: {x: 0.4, y: 0.4}
   m_BounceIntensity: 1
   m_ColorTemperature: 5500
-  m_UseColorTemperature: 1
+  m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 13}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -453,6 +502,29 @@ MonoBehaviour:
   VisibilityDistance: 15
   FloorHeight: 0
   UseFloorHeight: 0
+--- !u!114 &6087079993911221459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4622991426407606482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &4790679602351129624
 GameObject:
   m_ObjectHideFlags: 0

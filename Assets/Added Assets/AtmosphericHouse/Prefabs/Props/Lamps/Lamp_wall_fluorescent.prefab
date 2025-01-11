@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 1049161874}
   - component: {fileID: 1049161876}
   - component: {fileID: 1049161875}
+  - component: {fileID: 2492915812400938190}
   m_Layer: 0
-  m_Name: Point Light
+  m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1049161873}
   serializedVersion: 2
   m_LocalRotation: {x: 0.3494449, y: -0, z: 0.000000044703473, w: 0.9369569}
-  m_LocalPosition: {x: 0, y: -0.007, z: 0.214}
+  m_LocalPosition: {x: 0, y: -0.0078, z: 0.1082}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42,12 +43,12 @@ Light:
   m_GameObject: {fileID: 1049161873}
   m_Enabled: 1
   serializedVersion: 11
-  m_Type: 2
+  m_Type: 0
   m_Color: {r: 0.9622642, g: 0.94911677, b: 0.86694556, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.4
   m_Range: 7
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
+  m_SpotAngle: 160.09833
+  m_InnerSpotAngle: 93.73879
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -88,7 +89,7 @@ Light:
   m_AreaSize: {x: 0.85, y: 0.07}
   m_BounceIntensity: 1
   m_ColorTemperature: 5500
-  m_UseColorTemperature: 1
+  m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 13}
   m_UseBoundingSphereOverride: 1
   m_UseViewFrustumForShadowCasterCull: 1
@@ -114,6 +115,29 @@ MonoBehaviour:
   VisibilityDistance: 15
   FloorHeight: 0
   UseFloorHeight: 0
+--- !u!114 &2492915812400938190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049161873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1443544313
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,6 +149,7 @@ GameObject:
   - component: {fileID: 1443544314}
   - component: {fileID: 1443544316}
   - component: {fileID: 6293929210242977915}
+  - component: {fileID: 2974923735131560600}
   m_Layer: 0
   m_Name: Area Light
   m_TagString: Untagged
@@ -158,7 +183,7 @@ Light:
   serializedVersion: 11
   m_Type: 3
   m_Color: {r: 0.9622642, g: 0.94911677, b: 0.86694556, a: 1}
-  m_Intensity: 6
+  m_Intensity: 9
   m_Range: 8
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -202,7 +227,7 @@ Light:
   m_AreaSize: {x: 0.85, y: 0.07}
   m_BounceIntensity: 1
   m_ColorTemperature: 5500
-  m_UseColorTemperature: 1
+  m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 13}
   m_UseBoundingSphereOverride: 1
   m_UseViewFrustumForShadowCasterCull: 1
@@ -228,6 +253,29 @@ MonoBehaviour:
   VisibilityDistance: 15
   FloorHeight: 0
   UseFloorHeight: 0
+--- !u!114 &2974923735131560600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443544313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &7311082184227457107
 GameObject:
   m_ObjectHideFlags: 0
