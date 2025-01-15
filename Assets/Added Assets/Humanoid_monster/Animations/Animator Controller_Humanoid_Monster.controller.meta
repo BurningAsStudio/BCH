@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6d1b70fc430ff7d4ab09a3fdea942909
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 268211
+  packageName: Humanoid monster 1.01
+  packageVersion: 1.1
+  assetPath: Assets/Humanoid_monster/Animations/Animator Controller_Humanoid_Monster.controller
+  uploadId: 620874

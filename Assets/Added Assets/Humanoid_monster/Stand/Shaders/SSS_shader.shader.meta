@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a670c24144097594a92220b3bae480f5
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 268211
+  packageName: Humanoid monster 1.01
+  packageVersion: 1.1
+  assetPath: Assets/Humanoid_monster/Stand/Shaders/SSS_shader.shader
+  uploadId: 620874
