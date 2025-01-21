@@ -194,7 +194,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Vector1_2610B3FF: 1
+    - Vector1_2610B3FF: 0
     - Vector1_D1923AC5: 1
     - _AORemapMax: 1
     - _AORemapMin: 0.38830176
