@@ -19,7 +19,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 122
+  m_StaticEditorFlags: 123
   m_IsActive: 1
 --- !u!4 &6743983168426654479
 Transform:
@@ -75,7 +75,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 6203962018968887074}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1.5
-  m_ReceiveGI: 2
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -478,7 +478,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 122
+  m_StaticEditorFlags: 123
   m_IsActive: 1
 --- !u!4 &7774439200260426343
 Transform:
@@ -534,7 +534,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 6203962018877511618}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1.5
-  m_ReceiveGI: 2
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -625,7 +625,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 122
+  m_StaticEditorFlags: 123
   m_IsActive: 1
 --- !u!4 &2154104457965845429
 Transform:
@@ -681,7 +681,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 6203962018877511618}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1.5
-  m_ReceiveGI: 2
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -834,7 +834,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 122
+  m_StaticEditorFlags: 123
   m_IsActive: 1
 --- !u!4 &4567169047144370183
 Transform:
@@ -890,7 +890,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 6203962018968887074}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1.5
-  m_ReceiveGI: 2
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
