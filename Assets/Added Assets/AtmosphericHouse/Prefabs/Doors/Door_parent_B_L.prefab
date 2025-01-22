@@ -326,7 +326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8010167729746722735, guid: f52f46df1216bbb448cd2f91eca5953c, type: 3}
       propertyPath: m_ReceiveGI
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8010167729746722735, guid: f52f46df1216bbb448cd2f91eca5953c, type: 3}
       propertyPath: m_ProbeAnchor

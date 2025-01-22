@@ -18,7 +18,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 124
+  m_StaticEditorFlags: 125
   m_IsActive: 1
 --- !u!4 &7314761373130615214
 Transform:
@@ -48,12 +48,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placed: 0
-  category: Props
+  category: Extras
   prefab: Windowblinds_open_A
   variation: Windowblinds_open_A
   quickSwaps:
   - Windowblinds_open_B
   - Windowblinds_open_C
+  - Windowblinds_closed
   quickSwapsBtns: []
   additionals: []
   additionalsBtns: []

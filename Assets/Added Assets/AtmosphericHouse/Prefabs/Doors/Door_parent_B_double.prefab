@@ -191,7 +191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6016350426858491760, guid: 6567c5edeef3bb44c91cb9afb1d367ef, type: 3}
       propertyPath: m_ReceiveGI
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6016350426858491760, guid: 6567c5edeef3bb44c91cb9afb1d367ef, type: 3}
       propertyPath: m_ProbeAnchor
@@ -362,7 +362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2618392339276009739, guid: 9c36a9a415a94eb4897cc24febbe577c, type: 3}
       propertyPath: m_ReceiveGI
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2618392339276009739, guid: 9c36a9a415a94eb4897cc24febbe577c, type: 3}
       propertyPath: m_ProbeAnchor
