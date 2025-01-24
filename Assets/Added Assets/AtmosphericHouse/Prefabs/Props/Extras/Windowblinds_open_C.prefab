@@ -48,18 +48,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placed: 0
-  category: 
-  prefab: 
-  variation: 
-  quickSwaps: []
+  category: Extras
+  prefab: Windowblinds_open_C
+  variation: Windowblinds_open_C
+  quickSwaps:
+  - Windowblinds_open_A
+  - Windowblinds_open_B
+  - Windowblinds_closed
   quickSwapsBtns: []
   additionals: []
   additionalsBtns: []
-  additionalsPos: []
-  additionalsRot: []
+  additionalsPos:
+  - {x: 0, y: 0, z: 0}
+  additionalsRot:
+  - {x: 0, y: 0, z: 0}
   spawnAlongs: []
-  spawnAlongsPos: []
-  spawnAlongsRot: []
+  spawnAlongsPos:
+  - {x: 0, y: 0, z: 0}
+  spawnAlongsRot:
+  - {x: 0, y: 0, z: 0}
 --- !u!33 &6584000170016659953
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -99,7 +106,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 2
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
