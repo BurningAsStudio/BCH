@@ -5,9 +5,6 @@ using UnityEngine;
 namespace FS_Atmo
 {
     [RequireComponent(typeof(CharacterController))]
-
-
-
     public class SimplePlayerController : MonoBehaviour
     {
         public Camera playerCamera;
