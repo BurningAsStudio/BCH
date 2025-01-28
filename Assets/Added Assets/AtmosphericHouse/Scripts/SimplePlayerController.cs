@@ -1,77 +1,61 @@
-﻿using UnityEngine;
+﻿using UnityEngine.InputSystem;
+using UnityEngine;
 
 namespace BCH
 {
-    [RequireComponent(typeof(CharacterController))]
-    public class SimplePlayerController : MonoBehaviour
-    {
-        [SerializeField] private Joystick _joystick;
+	[RequireComponent(typeof(CharacterController))]
+	public class SimplePlayerController : MonoBehaviour
+	{
+		[SerializeField] private float _maxSpeed = 4f;
+		[SerializeField] private float _gravity = 1500f;
+		[SerializeField] private InputActionReference _moveAction;
+		[SerializeField] private Transform _cameraTransform;
 
-        public Camera playerCamera;
-        public float walkSpeed = 1.15f;
-        public float runSpeed = 4.0f;
-        public float lookSpeed = 2.0f;
-        public float lookXLimit = 60.0f;
-        public float gravity = 150.0f;
+		private CharacterController _characterController;
+		private Vector3 _moveDirection;
 
-        private CharacterController _characterController;
-        private Vector3 _moveDirection = Vector3.zero;
-        private float _rotationX = 0;
-        private bool _canMove = true;
+		private void Awake()
+		{
+			_characterController = GetComponent<CharacterController>();
+		}
 
-        private void Start()
-        {
-            _characterController = GetComponent<CharacterController>();
-        }
+		private void OnEnable()
+		{
+			_moveAction.action.Enable();
+		}
 
-        private void Update()
-        {
-            // Получаем направление движения
-            Vector3 forward = transform.TransformDirection(Vector3.forward);
-            Vector3 right = transform.TransformDirection(Vector3.right);
+		private void OnDisable()
+		{
+			_moveAction.action.Disable();
+		}
 
-            // Проверяем, используется ли джойстик
-            bool isJoystickActive = _joystick.Direction != Vector2.zero;
+		private void Update()
+		{
+			HandleMovement();
+		}
 
-            // Скорость движения (пешком или бегом)
-            bool isRunning = Input.GetKey(KeyCode.LeftShift);
-            float moveSpeed = isRunning ? runSpeed : walkSpeed;
+		private void HandleMovement()
+		{
+			var input = _moveAction.action.ReadValue<Vector2>();
+			var moveSpeed = input.magnitude * _maxSpeed;
 
-            // Вычисляем ввод для движения
-            float inputVertical = isJoystickActive ? _joystick.Vertical : Input.GetAxis("Vertical");
-            float inputHorizontal = isJoystickActive ? _joystick.Horizontal : Input.GetAxis("Horizontal");
+			var forward = _cameraTransform.forward;
+			var right = _cameraTransform.right;
 
-            // Рассчитываем движение
-            float movementDirectionY = _moveDirection.y; // сохраняем вертикальное направление
-            _moveDirection = (forward * inputVertical + right * inputHorizontal) * moveSpeed;
-            _moveDirection.y = movementDirectionY;
+			forward.y = 0;
+			right.y = 0;
 
-            // Добавляем гравитацию
-            if (!_characterController.isGrounded)
-            {
-                _moveDirection.y -= gravity * Time.deltaTime;
-            }
+			forward.Normalize();
+			right.Normalize();
 
-            // Перемещение игрока
-            _characterController.Move(_moveDirection * Time.deltaTime);
+			var movementDirectionY = _moveDirection.y;
+			_moveDirection = (forward * input.y + right * input.x) * moveSpeed;
+			_moveDirection.y = movementDirectionY;
 
-            // Обработка вращения
-            if (_canMove)
-            {
-                if (isJoystickActive)
-                {
-                    // Управление вращением с джойстика
-                    transform.rotation *= Quaternion.Euler(0, _joystick.Horizontal * lookSpeed, 0);
-                }
-                else
-                {
-                    // Управление мышью
-                    _rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
-                    _rotationX = Mathf.Clamp(_rotationX, -lookXLimit, lookXLimit);
-                    playerCamera.transform.localRotation = Quaternion.Euler(_rotationX, 0, 0);
-                    transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
-                }
-            }
-        }
-    }
+			if (!_characterController.isGrounded)
+				_moveDirection.y -= _gravity * Time.deltaTime;
+
+			_characterController.Move(_moveDirection * Time.deltaTime);
+		}
+	}
 }
